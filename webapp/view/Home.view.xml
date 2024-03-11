@@ -1,0 +1,107 @@
+<mvc:View controllerName="assignment.toyota.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    >
+    <Page id="page" >
+
+    <customHeader>
+
+    <OverflowToolbar>
+        <Button icon="sap-icon://menu"/>
+        <ToolbarSpacer />
+
+        <Image src="https://www.freepnglogos.com/uploads/toyota-logo-png/toyota-logo-photos-png-14.png" height="20px" width="20px" />
+
+        <Title text="TOYOTA"  class="sapThemeText"></Title>
+        <ToolbarSpacer />
+        <Button icon="sap-icon://search" class="sapThemeBaseBG sapThemeBaseBG-asBackgroundColor custombtn"/>
+        <Button icon="sap-icon://bell" />
+    
+    </OverflowToolbar>
+
+      
+
+    </customHeader>
+    <VBox  width="100%"   alignItems="Center" wrap="Wrap">
+    <Carousel height="50%" loop="true" >
+
+        <Image src="{images>/0/src}"></Image>
+        <Image src="{images>/1/src}"></Image>
+        <Image src="{images>/2/src}"></Image>
+        <Image src="{images>/3/src}"></Image>
+    </Carousel>
+
+    
+    <Button  text="Book a Service"   class="servicebtn sapUiMediumMarginBeginEnd"/>
+    </VBox>
+
+    <VBox class="vboxmain"
+    >
+        <HBox justifyContent="Center" class="sapUiMediumMarginTopBottom">
+
+            <HBox class="statuscard sapUiSmallMarginBeginEnd"
+            >
+                <core:Icon src="sap-icon://activities" class="sapThemeText"></core:Icon>
+                <Text text="View Service Status" class="sapThemeText"/> 
+            </HBox>
+
+            <HBox class="statuscard sapUiSmallMarginBeginEnd">
+                <core:Icon src="sap-icon://activities" class="sapThemeText"></core:Icon>
+                <Text text="View Service Status" class="sapThemeText"/> 
+
+            </HBox>    
+
+        </HBox>
+
+            <VBox class="statuscard sapUiSmallMargin"
+            >
+                <FormattedText htmlText="&lt;u&gt; Recommended for you &lt;/u&gt;"/>
+                <HBox class="sapUiSmallMargin" justifyContent="SpaceBetween">
+                    <VBox>
+                        <FormattedText htmlText="Camry" class="sapThemeText"/>
+                        <FormattedText htmlText="General job" />
+                    </VBox>
+
+                    <Button text="Quick Book" class="quickbookbtn"/>
+                
+                </HBox>
+
+                <HBox class="sapUiSmallMargin" justifyContent="SpaceBetween">
+                    <VBox>
+                        <FormattedText htmlText="Supra" class="sapThemeText"/>
+                        <FormattedText htmlText="General job"/>
+                    </VBox>
+                    <Button text="Quick Book" class="quickbookbtn"/>   
+                                
+                </HBox>                
+            </VBox>  
+
+    </VBox>
+
+    <footer>
+        <OverflowToolbar>
+
+        <ToolbarSpacer/>
+        <Button text="Home" icon="sap-icon://home" />
+
+        <ToolbarSpacer/>
+        <Button text="Vehicle" icon="sap-icon://car-rental" />
+
+        <ToolbarSpacer/>
+
+        <Button text="Product" icon="sap-icon://product" />
+
+            <ToolbarSpacer/>
+        <Button text="More" icon="sap-icon://overflow" /> 
+
+        <ToolbarSpacer/>
+        </OverflowToolbar>
+
+    </footer>
+    
+
+        
+        
+    </Page>
+</mvc:View>

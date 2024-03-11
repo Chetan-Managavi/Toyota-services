@@ -1,0 +1,52 @@
+/* Enter your custom styles here */
+
+
+.sapThemeText,.sapThemeText-asColor, .sapThemeBaseBG, .sapThemeBaseBG-asBackgroundColor  {
+    color: red !important;
+}
+
+.sapMIBar .sapMBtn .sapMBtnInner.sapMBtnDefault .sapUiIcon, .sapUxAPObjectPageHeaderIdentifierActions .sapMBtn .sapMBtnInner.sapMBtnDefault, .sapUxAPObjectPageHeaderIdentifierActions .sapMBtn .sapMBtnInner.sapMBtnDefault .sapUiIcon {
+    color: red;
+
+}
+
+.sapMIBar .sapMBtn:hover:not(.sapMBtnDisabled):not(.sapMSBActive)>.sapMBtnHoverable:not(.sapMBtnDisabled):not(.sapMBtnActive):not(.sapMToggleBtnPressed):not(.sapMBtnTransparent).sapMBtnDefault .sapUiIcon,.sapMBtn:hover:not(.sapMBtnDisabled):not(.sapMSBActive)>.sapMBtnHoverable:not(.sapMBtnDisabled):not(.sapMBtnActive):not(.sapMToggleBtnPressed):not(.sapMBtnTransparent).sapMBtnBack .sapUiIcon,.sapUxAPObjectPageHeaderIdentifierActions .sapMBtn:hover:not(.sapMBtnDisabled):not(.sapMSBActive)>.sapMBtnHoverable:not(.sapMBtnDisabled):not(.sapMBtnActive):not(.sapMToggleBtnPressed):not(.sapMBtnTransparent).sapMBtnDefault .sapUiIcon {
+    color: red
+}
+
+ .servicebtn .sapMBtnInner.sapMBtnHoverable.sapMFocusable.sapMBtnText.sapMBtnDefault{
+    color:white;
+    background-color: red;
+    border-radius: 25px;
+    padding-left: 75px;
+    padding-right:75px;   
+    
+}
+
+
+.quickbookbtn .sapMBtnInner.sapMBtnHoverable.sapMFocusable.sapMBtnText.sapMBtnDefault{
+    color:white;
+    background-color: red;
+    border-radius: 25px;
+    padding-left: 25px;
+    padding-right:25px;   
+    
+}
+
+.vboxmain{
+    background-color: red;
+}
+
+.statuscard{
+
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top:3%;
+    padding-bottom:3%
+}
+
+
+
+
