@@ -1,0 +1,48 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    controllerName="ui5.walkthrough.controller.Users"
+    xmlns="sap.m"
+    displayBlock="true"
+    height="100%"
+    busyIndicatorDelay="0"
+>
+    <Page
+        title="User Details"
+        id="Users"
+        class="userspage"
+    >
+
+        <Toolbar >
+            <Title text="User List"></Title>
+            <ToolbarSpacer ></ToolbarSpacer>
+            <SearchField width="50%" search=".onSearchFieldSearch"></SearchField>
+        </Toolbar>
+        <Table items="{userdata>/}" class="sapUiSmallMargin" id="usertable"  >
+            <columns>
+                <Column>
+                    <Label text="id"/>
+                </Column>
+                <Column>
+                    <Label text="name"/>
+                </Column>
+                <Column>
+                    <Label text="username"/>
+                </Column>
+                <Column>
+                    <Label text="email"/>
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem  type="Navigation" press="onColumnListItemPress" >
+                    <cells>
+                        <Text text="{userdata>id}"/>
+                        <Text text="{userdata>name}"/>
+                        <Text text="{userdata>username}"/>
+                        <Text text="{userdata>email}"/>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+        
+    </Page>
+</mvc:View>

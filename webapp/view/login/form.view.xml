@@ -1,0 +1,79 @@
+<mvc:View xmlns:form="sap.ui.layout.form"
+    controllerName="ui5.walkthrough.controller.form"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    
+    displayBlock="true"
+>
+    <Page title="Registration" id="form" class="formpage">
+        <content>
+        <FlexBox class="custom_flex_css">
+            
+            <form:Form  >
+
+                <form:layout>
+                
+                    <form:ColumnLayout
+                        columnsL="1"
+                        columnsM="1"
+                        columnsXL="1"
+                        emptyCellsLarge="0"
+                        labelCellsLarge="2"
+                        
+                    >
+                    </form:ColumnLayout>                      
+                </form:layout>
+                
+                <form:FormContainer >
+                    <form:formElements>
+                        <form:FormElement label="Name" >
+                            <form:fields>
+                            <Input id="firstname_inp" value="{formdata>/user/firstname}"></Input>
+                            
+                            </form:fields>
+                        </form:FormElement>
+                         <form:FormElement label="Last Name" >
+                            <form:fields>
+                            <Input value="{formdata/user/lastname}"></Input>
+                            </form:fields>
+                        </form:FormElement>
+
+                        <form:FormElement label="Data of Birth"  >
+                            <form:fields>
+                                <DatePicker value="{formdata/user/dob}"></DatePicker>
+                            </form:fields>
+                        </form:FormElement>
+                         
+                        <form:FormElement  label="Email-id">
+                            <form:fields>
+                                <Input type="Email" value="{formdata/user/emailid}"></Input>
+                            </form:fields>
+                        </form:FormElement>
+                        <form:FormElement label="Password">
+                            <form:fields>
+                                <Input type="Password" value="{formdata>/user/password}"></Input>
+                            </form:fields>
+                        </form:FormElement>
+
+                        <form:FormElement label="" >
+                            <form:fields>
+                            <Button 
+                            text="submit"
+                             type="Emphasized"
+                             press="onSubmitButtonPress" 
+                            />
+                            </form:fields>
+                        </form:FormElement>
+                        
+                        
+                    </form:formElements>
+                </form:FormContainer>
+              
+
+            </form:Form>
+        </FlexBox>
+
+
+        </content>
+    </Page>
+</mvc:View>

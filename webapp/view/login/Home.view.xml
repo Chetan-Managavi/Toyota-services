@@ -1,0 +1,53 @@
+<mvc:View
+	controllerName="ui5.walkthrough.controller.Home"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+<Page id="home" title="{i18n>homePageTitle}" >
+
+    <content>
+        <Button text="Registration Button" type="Emphasized" press=".onRegistrationFormButtonPress"></Button>
+
+		<FlexBox >
+		
+		<Text text="Examples of icons in UI5"></Text>
+		
+				<c:Icon src="sap-icon://employee"/>
+				<c:Icon src="sap-icon://settings"/>
+				<c:Icon src="sap-icon://search"/>
+				<c:Icon src="sap-icon://filter"/>
+				<c:Icon src="sap-icon://warning"/>
+				
+		</FlexBox>
+
+		<Label text="Select your State" ></Label>
+		<ComboBox items="{/items}">
+			 <items>
+            <c:Item key="{key}" text="{text}" />
+       		 </items>
+		
+		</ComboBox>
+
+		<VBox width="20%" >
+			<Button icon="sap-icon://action-settings" text="settings" ></Button>
+			<Button icon="sap-icon://account" text="account" ></Button>
+			<Button icon="sap-icon://add-employee" text="add-employee" ></Button>
+			<Button icon="sap-icon://locate-me" text="locate-me" ></Button>
+			<Button icon="sap-icon://appointment" text="Appointment" ></Button>
+		
+		</VBox>
+			
+
+
+    </content>
+
+
+
+</Page>
+
+
+</mvc:View>

@@ -1,0 +1,23 @@
+ 
+ 
+ 
+ .myapp .custom_flex_css{
+
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    
+    
+}
+
+.myapp .formpage , .myapp .userspage{
+    background-color: #cef3eb;
+}
+
+
+/* .myapp .navbtn.sapMBtnText{
+
+    color: #000;
+
+
+} */
